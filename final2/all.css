@@ -1,0 +1,270 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #111;
+    color: white;
+    padding: 25px 30px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sign-up-button a {
+    /* Apply the button style here */
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: black; /* Set text color to black */
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 3.3em; /* Adjust padding for general buttons */
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+/* Hover effect for the sign-up button */
+.sign-up-button a:hover {
+    color: white;
+    background-color: #666;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background: url("img/Overlay\ crumpled\ paper.jpeg");
+}
+
+.form-box {
+    width: 80%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-field {
+    background: lightgrey;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.input-field:hover {
+    background: #808588;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    flex: 1;
+    background: transparent;
+    border: 2px solid transparent;
+    outline: 0;
+    padding: 12px 15px;
+    color: #000; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#showPasswordBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.additional-info {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.additional-info a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 0px; 
+}
+
+.btn-field button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: black; /* Set text color to black */
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 3.3em; /* Adjust padding for general buttons */
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+/* Hover effect for buttons */
+.btn-field button:hover {
+    color: white;
+    background-color: #666;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#submitBtn {
+    background: white;
+    color: black;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, height 0.3s; /* Added height transition */
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#submitBtn:hover {
+    background: black; 
+    color: white;
+    transform: scale(1.05);
+    height: 45px; 
+}
+
+footer {
+    background: white;
+    padding: 30px 0;
+    color: black;
+    font-size: 14px;
+}
+
+.footerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerRightMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.fMenuTitle {
+    margin-bottom: 10px;
+}
+
+.fIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.fIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.fIcon:last-child {
+    margin-right: 0;
+}
+
+.footerRightMenu .copyright {
+    text-align: right;
+}
